@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    padding: 20px;
+    background-color: #e67e22;
+    color: #fff;
+    font-size: 1.4em;
+}
+
+main{
+    min-height: calc(100vh - 7em);
+}
+
+article,
+aside{
+    padding: 40px;
+    margin: 30px;
+    background-color: #ccc;
+    color: #fff;
+}
+p{
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+footer{
+    font-size: 18px;
+    padding: 20px;
+    background-color: #ccc;
+    color: #fff;
+    text-align: center;
+}
+
+@media (min-width: 45em){
+    main{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+/** For this specific layout, you could also use flexbox. The styles would look like this: 
+@media (min-width: 45em){
+    main{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    main article{
+        flex: 2
+    }
+    main aside{
+        flex: 1;
+    }
+}
+
+***/
+
+/** cards **/
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    gap: 1em;
+}
+.card{
+    padding: 30px;
+    background-color: #e67e22;
+    color: #fff;
+    border-radius: 1px solid #ccc;
+    box-shadow: 16px 16px 1px -6px -7px;
+}
