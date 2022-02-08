@@ -59,14 +59,33 @@ footer{
 
 /** cards **/
 .cards{
+    max-width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
     gap: 1em;
 }
 .card{
     padding: 30px;
-    background-color: #e67e22;
-    color: #fff;
+    background-color: #fff;
     border-radius: 1px solid #ccc;
     box-shadow: 16px 16px 1px -6px -7px;
 }
+.card img{
+    margin-top: 1rem;
+    width: 100%;
+}
+button {
+    margin-top: 2rem;
+    width: 9em;
+    height: 3em;
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    background-color: #218c74;
+    color: #fff;
+   }
+   button:hover{
+       background-color: #e67e22;
+       color: #fff;
+   }
