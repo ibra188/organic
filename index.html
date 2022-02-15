@@ -4,36 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,100;0,200;0,400;1,300&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <!--style sheet link -->
     <link rel="stylesheet" href="style.css">
     <title>Organic</title>
 </head>
 <body>
      <!--Pratice-->
      <header>
-         <h1>my header</h1>
+         <nav class="main-nav" aria-label="Main-nav">
+             <a href="index.html" class="logo"><img src="img/logo.jpg" alt="logo" width="100px"></a>
+
+             <div class="hamburger">
+                 <span class="line"></span>
+                 <span class="line"></span>
+                 <span class="line"></span>
+             </div>
+             <ul class="main-nav__list hide">
+                 <li class="main-nav__item"><a href="index.html" class="main-nav__link">Home</a> </li>
+                 <li class="main-nav__item"><a href="location.html" class="main-nav__link">Location</a> </li>
+                 <li class="main-nav__item"><a href="address.html" class="main-nav__link">Address</a> </li>
+                 <li class="main-nav__item"><a href="contact.html" class="main-nav__link">Contact</a> </li>
+             </ul>
+         </nav>
     </header>
 
     <main>
-      <article>
-        <h1>My web page</h1>
-    <p>This is my web page. There are many like it but this one is mine.</p>
-    <p>I’m using the HyperText Markup Language (<dfn>HTML</dfn>) to give structure to this page.</p>
-    <p>For example, this text is inside a paragraph which is inside an article which is inside the main content.</p>
-    <p>For the tangential information that follows, I’m using the <code>aside</code> element.</p>
-      </article>
+        <article>
+            <h1>My web page</h1>
+            <p>This is my web page. There are many like it but this one is mine.</p>
+            <p>I’m using the HyperText Markup Language (<dfn>HTML</dfn>) to give structure to this page.</p>
+            <p>For example, this text is inside a paragraph which is inside an article which is inside the main content.</p>
+            <p>For the tangential information that follows, I’m using the <code>aside</code> element.</p>
+        </article>
+
       <aside>
         <h2>History</h2>
-    <p>Did you know that <a href="http://info.cern.ch/hypertext/WWW/TheProject.html">the first web page ever made</a> is still online at its original URL?</p>
-    <p>The page was created by Tim Berners-Lee in the early 90s and it still works in a modern web browser.</p>
+        <p>Did you know that <a href="#">the first web page ever made</a> is still online at its original URL?</p>
+        <p>The page was created by Tim Berners-Lee in the early 90s,and it still works in a modern web browser.</p>
       </aside>
     </main>
 
     <section>
-        <h1>Cards</h1>
+        <h1 class="text--center">Cards</h1>
         <div class="cards">
             <div class="card">
                 <h2>A card</h2>
-                <img src="img/card-1.jpg" alt="card-1" width="220px">
+                <img src="img/card-1.jpg" alt="card-1" width="220px" height="130px">
                 <button>Buy</button>
            </div>
 
@@ -62,7 +82,7 @@
 
    <div class="card">
     <h2>A card</h2>
-    <img src="img/card-7.jpg" alt="card-1" width="220px">
+    <img src="img/card-6.jpg" alt="card-1" width="220px" height="130px">
     <button>Buy</button>
    </div>
 
@@ -70,7 +90,7 @@
 </section>
 
 <footer>
-   <small>is made by Ebrima sonko</small>
+   <small>is made by Ebrima Sonko</small>
 </footer>
 </body>
 </html>
